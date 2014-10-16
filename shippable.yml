@@ -23,6 +23,7 @@ before_install:
 
 # Make folders for the reports
 before_script:
+  - go version
   - mkdir -p shippable/testresults
   - mkdir -p shippable/codecoverage
 
