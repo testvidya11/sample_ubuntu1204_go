@@ -7,7 +7,7 @@ go:
 env:
   - CI_REPORT=shippable/testresults/junit.xml
 
-build_image: shippableimages/ubuntu1204_go:0.0.1
+build_image: shippableimages/ubuntu1404_go:0.0.1
 
 before_install:
   - source $HOME/.gvm/scripts/gvm;
