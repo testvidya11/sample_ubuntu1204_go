@@ -8,7 +8,8 @@ env:
   - CI_REPORT=shippable/testresults/junit.xml
 
 build_image: shippableimages/ubuntu1404_go
-
+install:
+  - go get -d -v ./... && go build -v ./...
 
 before_install:
   - source $HOME/.gvm/scripts/gvm;
